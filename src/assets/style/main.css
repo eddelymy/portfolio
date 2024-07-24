@@ -1,0 +1,17 @@
+@import './base.css';
+
+@font-face {   
+  font-family: 'Sevillana';   
+  font-style: normal;   
+  font-weight: 900;   
+  src: url('../fonts/Sevillana-Regular.ttf'); 
+}
+
+#app {
+  margin: 0 auto;
+  /* padding: 2rem; */
+  height: 100%;
+  /* min-height: 100vh; */
+}
+
+
