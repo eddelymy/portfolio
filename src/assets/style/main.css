@@ -6,6 +6,24 @@
   font-weight: 900;   
   src: url('../fonts/Sevillana-Regular.ttf'); 
 }
+@font-face {   
+  font-family: 'DancingScript-VariableFont_wght';   
+  font-style: normal;   
+  font-weight: 900;   
+  src: url('../fonts/DancingScript-VariableFont_wght.ttf'); 
+}
+@font-face {   
+  font-family: 'PlayfairDisplay-VariableFont_wght';   
+  font-style: normal;   
+  font-weight: 900;   
+  src: url('../fonts/PlayfairDisplay-VariableFont_wght.ttf'); 
+}
+@font-face {   
+  font-family: 'Oswald-VariableFont_wght';   
+  font-style: normal;   
+  font-weight: 900;   
+  src: url('../fonts/Oswald-VariableFont_wght.ttf'); 
+}
 
 #app {
   margin: 0 auto;

@@ -1,0 +1,38 @@
+[
+  {
+    "label":"Accueil",
+    "id":1,
+    "url":"/"
+  },
+  {
+    "label":"À propos",
+    "id":2,
+    "url":"/about"
+    
+  },
+  {
+    "label":"Formations",
+    "id":3,
+    "url":"/formations"
+  },
+  {
+    "label":"Compétences",
+    "id":4,
+    "url":"/skills"
+  },
+  {
+    "label":"Expérience",
+    "id":5,
+    "url":"/experience"
+  },
+  {
+    "label":"Projets",
+    "id":6,
+    "url":"/projects"
+  },
+  {
+    "label":"Contact",
+    "id":7,
+    "url":"/contact"
+  }
+]

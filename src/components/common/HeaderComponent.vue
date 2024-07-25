@@ -1,7 +1,18 @@
 <template>
   <div class="flex w-full items-center">
     <div>
-      <span class="text-4xl font-black" style="font-family: 'Sevillana'">Amina Eddelymy</span>
+      <span 
+        class="text-4xl font-black" 
+        style="font-family: 'Sevillana'"
+        v-if="toggleMenu">
+        Amina Eddelymy
+      </span>
+      <span 
+        class="text-4xl font-black" 
+        style="font-family: 'Sevillana'"
+        v-if="!toggleMenu">
+        A.E
+      </span>
     </div>
     <ul class="grow flex flex-row-reverse items-center">
       <li type="button" class="cursor-pointer" @click="toggleMenu = !toggleMenu">
