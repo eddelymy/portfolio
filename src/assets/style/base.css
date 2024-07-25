@@ -13,7 +13,7 @@
 
 body {
   min-height: 100vh;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0 auto;
 }
 
@@ -21,4 +21,6 @@ body {
   /* body{
     @apply bg-[url('../images/dark-backgroun.svg')] bg-no-repeat bg-cover
   } */
+   
 }
+
