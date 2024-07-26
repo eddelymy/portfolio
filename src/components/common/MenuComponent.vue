@@ -7,7 +7,7 @@
       <li v-for="menu in menus" 
         class="border-l"
         :class="darkMode ? ' border-white' : 'border-black border-l-2' ">
-        <RouterLink class="nav-link flex items-center p-6  hover:-translate-y-1 hover:scale-110 " :to="menu.url" @click="toggleMenu = !toggleMenu">
+        <RouterLink class="nav-link flex items-center p-6  hover:-translate-y-1 hover:scale-100 " :to="menu.url" @click="toggleMenu = !toggleMenu">
           <span class="text-3xl ease-in-out duration-300">{{ menu.label }}</span>
         </RouterLink>
       </li>

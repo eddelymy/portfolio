@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen bg-no-repeat bg-cover p-20" 
+  <div class="h-screen flex flex-col w-full bg-no-repeat bg-cover p-20 overflow-auto" 
     :class="darkMode ? 'bg-[url(../../assets/images/dark-backgroun.svg)] text-white' : 'text-black bg-[url(../../assets/images/ligth-background.svg)]' " >
     <HeaderComponent />
     <MenuComponent/>
