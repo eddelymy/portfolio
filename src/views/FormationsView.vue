@@ -4,8 +4,8 @@
       :class="darkMode ? ' border-white' : 'border-black' ">
       Formations & Certificats
     </h1>
-    <div class="mt-16 flex h-96 p-4">
-      <div class="w-full mr-16 flex flex-col h-full ">
+    <div class="mt-16 flex flex-row p-4 min-h-52">
+      <div class="w-full max-lg:mr-0 mr-16 flex flex-col justify-between max-h-96">
         <div 
           class="cursor-pointer hover:-translate-y-1 hover:scale-10 duration-300  rounded-md  bg-opacity-50 w-full p-6 border-l-4 "
           :class="!darkMode ? ' bg-white border-l-black' : 'bg-black border-l-white' ">
@@ -43,7 +43,7 @@
         </div>
       </div>
       <div 
-        class="rounded-md bg-opacity-50 w-full h-full"
+        class="rounded-md bg-opacity-50 w-full max-h-96 max-lg:hidden"
         :class="!darkMode ? ' bg-white' : 'bg-black' ">
         <img 
           src="../assets/images/image3.svg" 
@@ -55,94 +55,69 @@
           class="h-full w-full"/>
       </div>
     </div>
-    <div class="py-16 flex px-4 ">
+    <div class="mt-8 flex flex-wrap p-4">
         <div 
-          class="mr-6 cursor-pointer hover:-translate-y-1 hover:scale-10 duration-300  rounded-md  bg-opacity-50 w-full p-6 border-l-4 "
-          :class="!darkMode ? ' bg-white border-l-black' : 'bg-black border-l-white' ">
+          class="mb-3 cursor-pointer hover:-translate-y-1 hover:scale-10 duration-300  rounded-md  bg-opacity-50 w-full p-6 border-l-4 "
+          :class="!darkMode ? ' bg-white border-l-black' : 'bg-black border-l-white' "
+          v-for="certificate in certificates" :key="certificate.id">
           <h1 class="text-2xl">
             <font-awesome-icon :icon="['fas', 'certificate']" class="mr-1" />
-              Classez et segmentez des données visuelles 
+              {{ certificate.title }} 
           </h1>
           <div class="mt-4 flex flex-col">
             <span>
-              OpenClassrooms
-            </span>
-          </div>
-        </div>
-        <div 
-          class="mr-6 cursor-pointer hover:-translate-y-1 hover:scale-10 duration-300  rounded-md  bg-opacity-50 w-full p-6 border-l-4 "
-          :class="!darkMode ? ' bg-white border-l-black' : 'bg-black border-l-white' ">
-          <h1 class="text-2xl">
-            <font-awesome-icon :icon="['fas', 'certificate']" class="mr-1" />
-              Apprenez les bases du langage Python
-          </h1>
-          <div class="mt-4 flex flex-col">
-            <span>
-              OpenClassrooms
-            </span>
-          </div>
-        </div>
-        <div 
-          class="mr-6 cursor-pointer hover:-translate-y-1 hover:scale-10 duration-300  rounded-md  bg-opacity-50 w-full p-6 border-l-4 "
-          :class="!darkMode ? ' bg-white border-l-black' : 'bg-black border-l-white' ">
-          <h1 class="text-2xl">
-            <font-awesome-icon :icon="['fas', 'certificate']" class="mr-1" />
-              Apprenez à programmer en Java
-          </h1>
-          <div class="mt-4 flex flex-col">
-            <span>
-              OpenClassrooms
-            </span>
-          </div>
-        </div>
-        <div 
-          class="mr-6 cursor-pointer hover:-translate-y-1 hover:scale-10 duration-300  rounded-md  bg-opacity-50 w-full p-6 border-l-4 "
-          :class="!darkMode ? ' bg-white border-l-black' : 'bg-black border-l-white' ">
-          <h1 class="text-2xl">
-            <font-awesome-icon :icon="['fas', 'certificate']" class="mr-1" />
-              Apprenez à programmer avec JavaScript
-          </h1>
-          <div class="mt-4 flex flex-col">
-            <span>
-              OpenClassrooms
-            </span>
-          </div>
-        </div>
-        <div 
-          class="mr-6 cursor-pointer hover:-translate-y-1 hover:scale-10 duration-300  rounded-md  bg-opacity-50 w-full p-6 border-l-4 "
-          :class="!darkMode ? ' bg-white border-l-black' : 'bg-black border-l-white' ">
-          <h1 class="text-2xl">
-            <font-awesome-icon :icon="['fas', 'certificate']" class="mr-1" />
-              Concevez votre site web avec PHP et MySQL
-          </h1>
-          <div class="mt-4 flex flex-col">
-            <span>
-              OpenClassrooms
-            </span>
-          </div>
-        </div>
-        <div 
-          class="cursor-pointer hover:-translate-y-1 hover:scale-10 duration-300  rounded-md  bg-opacity-50 w-full p-6 border-l-4 "
-          :class="!darkMode ? ' bg-white border-l-black' : 'bg-black border-l-white' ">
-          <h1 class="text-2xl">
-            <font-awesome-icon :icon="['fas', 'certificate']" class="mr-1" />
-              Programmez en orienté objet en PHP
-          </h1>
-          <div class="mt-4 flex flex-col">
-            <span>
-              OpenClassrooms
+              {{certificate.site}}
             </span>
           </div>
         </div>
         
-      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
 import {storeToRefs} from "pinia"
 import {useDarkModeStore} from '../stores/darkMode'
+import {ref} from 'vue'
 
+const certificates = ref([
+  {
+    id:1,
+    title:"Classez et segmentez des données visuelles",
+    site:'OpenClassrooms'
+
+  },
+  {
+    id:2,
+    title:"Apprenez les bases du langage Python",
+    site:'OpenClassrooms'
+
+  },
+  {
+    id:3,
+    title:"Apprenez à programmer en Java",
+    site:'OpenClassrooms'
+
+  },
+  {
+    id:4,
+    title:"Apprenez à programmer avec JavaScript",
+    site:'OpenClassrooms'
+
+  },
+  {
+    id:5,
+    title:"Concevez votre site web avec PHP et MySQL",
+    site:'OpenClassrooms'
+
+  },
+  {
+    id:6,
+    title:"Programmez en orienté objet en PHP",
+    site:'OpenClassrooms'
+
+  }
+])
 const darkModeStore = useDarkModeStore()
 const {darkMode} = storeToRefs(darkModeStore)
 </script>
