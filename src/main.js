@@ -1,10 +1,10 @@
 import './assets/style/main.css'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faMoon,faSun,faBars,faXmark,faDownload,faGraduationCap,faCertificate } from '@fortawesome/free-solid-svg-icons'
+import { faMoon,faSun,faBars,faXmark,faDownload,faGraduationCap,faCertificate,faBriefcase, faLocationDot,faCalendar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faMoon,faSun,faBars,faXmark,faDownload,faGraduationCap,faCertificate);
+library.add(faMoon,faSun,faBars,faXmark,faDownload,faGraduationCap,faCertificate,faBriefcase,faLocationDot,faCalendar);
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'

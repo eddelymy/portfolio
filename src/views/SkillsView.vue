@@ -6,7 +6,7 @@
     </h1>
     <div class="mt-16 flex flex-row p-4 min-h-52">
       <div 
-        class="mt-16 rounded-md h-full bg-opacity-50 w-full p-6 flex flex-wrap justify-between "
+        class="rounded-md h-full bg-opacity-50 w-full p-6 flex flex-wrap justify-between "
         :class="!darkMode ? ' bg-white' : 'bg-black' ">
         <div class="" v-for="(skill,index) in skills" :key="index">
           <h1 class="text-2xl">
