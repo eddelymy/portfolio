@@ -33,6 +33,23 @@
 h1{
   font-family: swald-VariableFont_wght;
 }
+.scrollbar-custom {
+  scrollbar-width: thin;
+  scrollbar-color: #c7d2fe  transparent;
+}
+.scrollbar-custom::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* .scrollbar-custom::-webkit-scrollbar-track {
+  background: #E2E8F0;
+} */
+
+/* .scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #4A5568;
+  border-radius: 6px;
+  border: 3px solid #E2E8F0;
+} */
 
 
 
