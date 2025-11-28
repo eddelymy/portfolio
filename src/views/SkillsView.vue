@@ -4,7 +4,7 @@
       :class="darkMode ? ' border-white' : 'border-black' ">
       Compétence
     </h1>
-    <div class="scrollbar-custom mx-auto max-w-[700px] h-[400px] overflow-y-scroll grid grid-cols-4 gap-5 mt-16 px-2 ">
+    <div class="scrollbar-custom mx-auto max-w-[900px] h-[400px] overflow-y-scroll grid grid-cols-4 gap-5 mt-16 px-2 ">
       <div 
         class=" text-wrap cursor-pointer hover:-translate-y-1 hover:scale-10 duration-300 rounded-md bg-opacity-50 h-[125px] grid grid-rows-2 place-items-center py-3"
         v-for="(skill,index) in skills" :key="index"
@@ -128,12 +128,6 @@ const skills = ref([
       dark_logo:'spark-dark.svg',
       width:'50'
     }
-    // ,
-    // {
-    //   title:'Pentaho',
-    //   light_logo:'python-light.svg',
-    //   dark_logo:'Java_Logo-dark.svg',
-    // }
 ])
 
 const darkModeStore = useDarkModeStore()

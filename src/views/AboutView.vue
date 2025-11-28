@@ -20,7 +20,7 @@
         et je trouve une grande satisfaction dans le coding et la 
         résolution de problèmes techniques.
       </div>
-      <img src="../assets/images/amina_edd.png"/>
+      <img src="../assets/images/amina_edd.png" class="h-44"/>
     </div>
     <button type="button" class="px-4 animate-bounce">
       <a href="src\assets\cv\CV-Amina-EDDELYMY.pdf" download="CV-Amina-EDDELYMY.pdf">

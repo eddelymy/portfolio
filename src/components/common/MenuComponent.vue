@@ -1,9 +1,9 @@
 <template>
   <div 
-    class="w-full h-full flex items-center text-8xl"
+    class="w-full h-full flex items-center text-8xl "
     style="font-family: PlayfairDisplay-VariableFont_wght;"  
     v-show="!toggleMenu">
-    <ul class="ml-36">
+    <ul class="w-full">
       <li v-for="menu in menus" 
         class="border-l"
         :class="darkMode ? ' border-white' : 'border-black border-l-2' ">
